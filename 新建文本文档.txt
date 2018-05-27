@@ -54,7 +54,6 @@ sed -i -e "s/^/#/g" /etc/nginx/conf.d/default.conf
 /etc/supervisor/conf.d/webvirtmgr.conf
 
 
-
 [program:webvirtmgr]
 command=/usr/bin/python /var/www/webvirtmgr/manage.py run_gunicorn -c /var/www/webvirtmgr/conf/gunicorn.conf.py
 directory=/var/www/webvirtmgr
@@ -120,4 +119,5 @@ ssh-keygen
 touch ~/.ssh/config && echo -e "StrictHostKeyChecking=no\nUserKnownHostsFile=/dev/null" >> ~/.ssh/config
 chmod 0600 ~/.ssh/config
 ssh-copy-id webvirtmgr@${libvirt_host_ip}
+
 
