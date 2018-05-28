@@ -111,7 +111,7 @@ service libvirtd restart
 ```
 adduser webvirtmgr
 passwd webvirtmgr
-usermod -G qemu,kvm -a webvirtmgr
+usermod -G libvirt -a webvirtmgr
 /etc/polkit-1/localauthority/50-local.d/50-libvirt-remote-access.pkla   （webvirtmgr为所属者)
 [Remote libvirt SSH access]
 Identity=unix-user:webvirtmgr
