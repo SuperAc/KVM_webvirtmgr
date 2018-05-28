@@ -13,6 +13,7 @@ cd /var/www/
 git clone git://github.com/retspen/webvirtmgr.git
 cd webvirtmgr
 pip install -r requirements.txt
+
 <br>这里会提示让创建一个登录用户，按照提示创建就可以了，
 以后可以执行`./manage.py createsuperuser`再创建其它登录用户<br>
 ./manage.py syncdb
